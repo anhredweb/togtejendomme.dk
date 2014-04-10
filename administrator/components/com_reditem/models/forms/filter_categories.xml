@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="filter_types"
+			type="ritypelist"
+			class="chosen"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_TYPES"
+			description="COM_REDITEM_FILTER_TYPES_DESCRIPTION"
+			>
+			<option value="0">COM_REDITEM_SELECT_FILTER_TYPES</option>
+		</field>
+	</fieldset>
+</form>

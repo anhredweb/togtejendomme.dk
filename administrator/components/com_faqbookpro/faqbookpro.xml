@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+
+	<name>FAQ Book Pro</name>
+	<creationDate>January 2012</creationDate>
+	<author>Minitek</author>
+	<authorEmail>info@minitek.gr</authorEmail>
+	<authorUrl>http://www.minitek.gr/</authorUrl>
+	<copyright>Copyright (c) 2011-2013 Minitek. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.0.7</version>
+	<description>
+	<![CDATA[
+		<style>
+		  #extension_container {
+			  font:normal 11px Arial, Helvetica, sans-serif;
+				line-height:1.5;
+				color:#555;
+				padding:20px;
+				text-align: left;
+			}
+			h1 {
+			  clear:both;
+				margin:0px 0px 10px 0px;
+				padding:0px 0px 2px 0px;
+				color:#777;
+				border-bottom:1px solid #ddd;
+				font:24px Arial,Helvetica,sans-serif;
+			}
+			#extension_container ul {
+			  margin:5px 15px;
+				padding:0px;
+				list-style:disc;
+			}
+			#extension_container ul li {
+			  margin:2px;
+				padding:0px;
+				list-style:disc;
+			}
+			#minitek_logo {
+			  float:right;
+				background:#fff;
+				padding:2px;
+				margin:0 0 0 10px;
+				padding:2px; 
+				border:0;
+			}
+			#extension_container a {
+			  color:#006699;
+			}
+			a.active,a.focus {
+			  outline:0;
+			}
+		</style>
+		
+		<div id='extension_container'>
+		  <h1>FAQ Book Pro</h1>
+		  
+		  FAQBook Pro is a powerful content component for Joomla!.<br /><br />
+		
+		  <h3>Features</h3>
+			
+			<ul class="list-style">
+				<li>Compatible with Joomla! 2.5 and Joomla! 3.1.5+</li>
+				<li>MVC Architecture</li>
+				<li>Ajax Driven Engine</li>
+				<li>Responsive layout</li>	
+				<li>Unlimited Category Depth</li>
+				<li>Advanced Voting System</li>
+				<li>Access Control Levels (ACL)</li>
+				<li>Built-in Search</li>				
+				<li>Smart SEF URLs</li>	
+				<li>Dynamic Navigation</li>
+				<li>HTML validated Markup</li>
+				<li>Multi-Language Support</li>
+			</ul>
+			
+			<h3>Version</h3>
+			
+			<p>Your current version is 3.0.7. Check out the <a target="_blank" href="http://www.minitek.gr/joomla-extensions/joomla/faq-book-pro">latest version</a>.</p>
+			
+			<h3>Support</h3>
+			
+			<p>If you need support just head to our forum: <a target="_blank" href="http://www.minitek.gr/support/forum.html">Minitek Support Forum</a>.</p>
+			
+			<br>	
+			If you use FAQBook Pro please submit a review at <a style='text-decoration:underline;' href='http://extensions.joomla.org/extensions/directory-a-documentation/faq/19917' target='_blank'>Joomla! Extensions Directory</a>.<br /><br />
+			Copyright (C) 2011 - 2013 Minitek.gr.	
+		</div>
+		
+	]]>	
+	</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+ 	<update>
+ 		<schemas>
+ 			<schemapath type="mysql">sql/updates/mysql</schemapath>
+ 		</schemas>
+	</update>
+	
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>faqbookpro.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>	
+		<folder>helpers</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	
+	<languages folder="site">
+      <language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.ini</language>										
+    </languages>
+
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu img="components/com_faqbookpro/assets/images/dashboard/icons/icon-16-faqbook.png">COM_FAQBOOKPRO_ADMIN_MENU</menu>
+		<submenu>
+			<menu link="option=com_faqbookpro" view="dashboard" img="class:component"
+				alt="FAQ Book Pro/Dashboard">com_faqbookpro_dashboard</menu>	
+			<menu link="option=com_categories&amp;extension=com_faqbookpro"
+				view="categories" img="class:category" alt="FAQ Book Pro/Categories">com_faqbookpro_categories</menu>		
+			<menu link="option=com_faqbookpro&amp;view=articles" view="articles" img="class:article"
+				alt="FAQ Book Pro/Articles">com_faqbookpro_articles</menu>
+			<menu link="option=com_faqbookpro&amp;view=votes" view="votes" img="class:featured"
+				alt="FAQ Book Pro/Votes">com_faqbookpro_votes</menu>
+			<menu link="option=com_faqbookpro&amp;view=about" view="about" img="class:info"
+				alt="FAQ Book Pro/About">com_faqbookpro_about</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>faqbookpro.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+		</files>
+		
+	<languages folder="admin">
+    	<language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.ini</language>
+      	<language tag="en-GB">language/en-GB/en-GB.com_faqbookpro.sys.ini</language>											
+    </languages>
+		
+	</administration>
+	
+	<config>
+	
+		<fields>
+			<fieldset>		  
+				<field name="load_jquery" default="1" />
+				<field name="category_title" default="1" />
+				<field name="category_description" default="1" />
+				<field name="category_image" default="1" />
+				<field name="category_imageSize" default="300" />
+				<field name="category_imageHeight" default="" />
+				<field name="subcategories_title" default="1" />
+				<field name="subcategories_description" default="1" />
+				<field name="subcategories_image" default="1" />
+				<field name="subcategories_imageSize" default="200" />
+				<field name="subcategories_imageHeight" default="" />
+				<field name="subcategories_faqs" default="1" />
+				<field name="faqs_ordering" default="ordering" />
+				<field name="faq_text" default="1" />
+				<field name="faq_text_limit" default="1" />
+				<field name="faq_text_limit_num" default="20" />
+				<field name="faq_date" default="1" />
+				<field name="faq_date_format" default="2" />
+				<field name="faq_author" default="1" />
+				<field name="faq_author_link" default="0" />
+				<field name="faq_permalink" default="1" />
+				<field name="faq_voting" default="1" />
+				<field name="faq_guest_voting" default="1" />
+				<field name="faq_image" default="0" />
+				<field name="faq_imageSize" default="400" />
+				<field name="faq_imageHeight" default="" />
+				<field name="faq_search" default="1" />
+				<field name="search_limit" default="50" />
+				<field name="search_ordering" default="id" />
+				<field name="search_introtext" default="1" />
+				<field name="search_introtext_limit" default="15" />
+				<field name="search_category" default="1" />
+				<field name="enable_ask_new_faq" default="2" />
+				<field name="allow_select_category" default="1" />
+				<field name="ask_bulk_cat" default="" />
+				<field name="ask_autopublish" default="0" />
+				<field name="askform_captcha" default="0" />
+				<field name="captcha_key" default="" />
+			</fieldset>
+		</fields>
+		
+  </config>
+  
+  	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="FAQBookPro Component Updates">http://www.minitek.gr/update/faqbookpro.xml
+		</server>
+	</updateservers>
+	
+</extension>
+

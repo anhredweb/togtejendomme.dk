@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+
+	<layout title="COM_FAQBOOKPRO_VIEW_INDEX_TITLE">
+		<message>
+			<![CDATA[COM_FAQBOOKPRO_VIEW_INDEX_TITLE_DESC]]>
+		</message>
+	</layout>
+	
+	<state>
+		<name>COM_FAQBOOKPRO_VIEW_INDEX_TITLE</name>
+		<description>COM_FAQBOOKPRO_VIEW_INDEX_TITLE_DESC</description>
+		
+		<fields name="params">
+				
+			<fieldset name="advanced" label="COM_MENUS_LAYOUT_FEATURED_OPTIONS">
+				<field 
+				  name="index_root" 
+				  type="category"
+			    extension="com_faqbookpro"
+			    multiple="false"
+			    size="10"
+			    default=""
+				required="true"
+					label="COM_FAQBOOKPRO_INDEX_ROOT_LABEL" 
+					description="COM_FAQBOOKPRO_INDEX_ROOT_DESC" >
+				
+			  </field>
+				
+				<field name="leftnav" type="list" default="1" label="COM_FAQBOOKPRO_INDEX_LEFTNAV_LABEL" description="COM_FAQBOOKPRO_INDEX_LEFTNAV_DESC">
+					<option value="0">COM_FAQBOOKPRO_HIDE</option>
+					<option value="1">COM_FAQBOOKPRO_SHOW</option>
+				</field>
+								
+				<field name="index_featured" type="list" default="1" label="COM_FAQBOOKPRO_INDEX_FEATURED_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_DESC">
+					<option value="0">COM_FAQBOOKPRO_HIDE</option>
+					<option value="1">COM_FAQBOOKPRO_SHOW</option>
+				</field>
+				
+				<field 
+				  name="index_featured_cats" 
+				  type="category"
+			    extension="com_faqbookpro"
+			    multiple="true"
+			    size="10"
+			    default="" 
+					label="COM_FAQBOOKPRO_INDEX_FEATURED_CATS_LABEL" 
+					description="COM_FAQBOOKPRO_INDEX_FEATURED_CATS_DESC">		
+			  </field>	
+				
+				<field name="index_featured_cols" type="text" default="1" size="4" label="COM_FAQBOOKPRO_INDEX_FEATURED_COLS_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_COLS_DESC"/>
+				
+				<field name="index_featured_image" type="list" default="1" label="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_DESC">
+					<option value="0">COM_FAQBOOKPRO_HIDE</option>
+					<option value="1">COM_FAQBOOKPRO_SHOW</option>
+				</field>
+				<field name="index_featured_imageSize" type="text" default="200" size="4" label="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_SIZE_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_SIZE_DESC"/>
+				<field name="index_featured_imageHeight" type="text" default="150" size="4" label="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_HEIGHT_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_IMAGE_HEIGHT_DESC"/>
+				
+				<field name="index_featured_title" type="list" default="1" label="COM_FAQBOOKPRO_INDEX_FEATURED_TITLE_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_TITLE_DESC">
+					<option value="0">COM_FAQBOOKPRO_HIDE</option>
+					<option value="1">COM_FAQBOOKPRO_SHOW</option>
+				</field>
+				<field name="index_featured_description" type="list" default="1" label="COM_FAQBOOKPRO_INDEX_FEATURED_DESCRIPTION_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_DESCRIPTION_DESC">
+					<option value="0">COM_FAQBOOKPRO_HIDE</option>
+					<option value="1">COM_FAQBOOKPRO_SHOW</option>
+				</field>
+				<field name="index_featured_description_limit" type="text" default="15" size="4" label="COM_FAQBOOKPRO_INDEX_FEATURED_DESCRIPTION_LIMIT_LABEL" description="COM_FAQBOOKPRO_INDEX_FEATURED_DESCRIPTION_LIMIT_DESC"/>
+				
+				<field name="index_pre_text" type="textarea" default="" size="4" filter="raw" label="COM_FAQBOOKPRO_INDEX_PRE_TEXT_LABEL" description="COM_FAQBOOKPRO_INDEX_PRE_TEXT_DESC"/>
+				<field name="index_post_text" type="textarea" default="" size="4" filter="raw" label="COM_FAQBOOKPRO_INDEX_POST_TEXT_LABEL" description="COM_FAQBOOKPRO_INDEX_POST_TEXT_DESC"/>
+						
+			</fieldset>
+		</fields>
+	</state>
+	
+</metadata>

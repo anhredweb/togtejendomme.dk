@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="filter_types"
+			type="ritypelist"
+			class="chosen"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_TYPES"
+			description="COM_REDITEM_FILTER_TYPES_DESCRIPTION"
+			>
+			<option value="0">COM_REDITEM_SELECT</option>
+		</field>
+		<field
+			name="filter_published"
+			type="ripublishedlist"
+			class="chosen"
+			onchange="this.form.submit();"
+			label="COM_REDITEM_FILTER_ITEMS_PUBLISHED"
+			description="COM_REDITEM_FILTER_ITEMS_PUBLISHED_DESC"
+			>
+			<option value="">COM_REDITEM_SELECT</option>
+		</field>
+
+	</fieldset>
+</form>

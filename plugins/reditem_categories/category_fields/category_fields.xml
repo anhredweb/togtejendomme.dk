@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" client="site" type="plugin" group="reditem_categories" method="upgrade">
+	<name>PLG_CATEGORY_FIELDS</name>
+	<version>2.0</version>
+	<creationDate>November 2013</creationDate>
+	<author>redCOMPONENT.com</author>
+	<copyright>redCOMPONENT.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PLG_CATEGORY_FIELDS_DESCRIPTION</description>
+	<files>
+		<filename plugin="category_fields">category_fields.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_reditem_categories_category_fields.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_reditem_categories_category_fields.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/libraries/reditem/form/fields">
+			<fieldset name="basic">
+				<field name="typeID" type="RITypeList" label="PLG_CATEGORY_FIELDS_TYPES" description="PLG_CATEGORY_FIELDS_TYPES_DESC" required="true">
+					<option value="">COM_REDITEM_SELECT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

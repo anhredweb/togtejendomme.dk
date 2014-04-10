@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  	
+	<fieldset
+		name="category"
+		label="COM_FAQBOOKPRO_CONFIG_CATEGORIES_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_CATEGORIES_DESC"
+	>
+	
+		<field
+			name="load_jquery"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_LOAD_JQUERY_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_LOAD_JQUERY_DESC"
+			default="1"
+		>
+		  <option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	
+	  <field
+			name="category_title"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_CATEGORY_TITLE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_CATEGORY_TITLE_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+	
+	  <field
+			name="category_description"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_CATEGORY_DESCRIPTION_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_CATEGORY_DESCRIPTION_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+		
+		<field
+			name="category_image"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+		
+		<field name="category_imageSize" type="text" default="300" size="4" label="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_SIZE_LABEL" description="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_SIZE_DESC"/>
+		
+		<field name="category_imageHeight" type="text" default="" size="4" label="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_HEIGHT_LABEL" description="COM_FAQBOOKPRO_CONFIG_CATEGORY_IMAGE_HEIGHT_DESC"/>
+			
+		<field
+			name="subcategories_title"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_TITLE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_TITLE_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>	
+				
+		<field
+			name="subcategories_description"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_DESCRIPTION_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_DESCRIPTION_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+		
+		<field
+			name="subcategories_image"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+		
+		<field name="subcategories_imageSize" type="text" default="200" size="4" label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_SIZE_LABEL" description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_SIZE_DESC"/>  
+		
+		<field name="subcategories_imageHeight" type="text" default="" size="4" label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_HEIGHT_LABEL" description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_IMAGE_HEIGHT_DESC"/>  
+		
+		<field
+			name="subcategories_faqs"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_FAQ_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SUBCATEGORIES_FAQS_DESC"
+			default="1"
+		>
+		  <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>
+		</field>
+		
+		<field type="spacer" name="myspacer11" hr="true" />
+	
+	</fieldset>
+	
+	<fieldset
+		name="faqs"
+		label="COM_FAQBOOKPRO_CONFIG_FAQS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_FAQS_DESC"
+	>
+	 
+	  <field
+			name="faqs_ordering"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_ORDERING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_ORDERING_DESC"
+			default="ordering"
+		>
+		  <option value="id">Id</option>
+			<option value="title">Title</option>		
+			<option value="title DESC">Title reverse</option>
+			<option value="created">Date created</option>
+			<option value="created DESC">Date created reverse</option>
+			<option value="modified">Date modified</option>
+			<option value="modified DESC">Date modified reverse</option>
+			<option value="ordering">Ordering</option>
+			<option value="ordering DESC">Ordering reverse</option>
+			<option value="hits">Hits</option>
+			<option value="random">Random</option>
+		</field>
+		
+		<field
+			name="faq_text"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_DESC"
+			default="1"
+		>
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="faq_text_limit"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_LIMIT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_LIMIT_DESC"
+			default="1"
+		>
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="faq_text_limit_num"
+			type="text"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_LIMIT_NUM_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_TEXT_LIMIT_NUM_DESC"
+			size="50"
+			default="20"
+		/>
+		  
+		<field
+			name="faq_date"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_DATE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_DATE_DESC"
+			default="1"
+		>
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="faq_date_format"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_DATE_FORMAT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_DATE_FORMAT_DESC"
+			default="2"
+		>
+		  <option value="1">DD-MM-YYYY</option>
+			<option value="2">MM-DD-YYYY</option>
+			<option value="3">MM DD, YYYY</option>
+		</field>
+			
+		<field
+			name="faq_author"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_AUTHOR_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_AUTHOR_DESC"
+			default="1"
+		>
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field
+			name="faq_author_link"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_AUTHOR_LINK_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_AUTHOR_LINK_DESC"
+			default="0"
+		>
+		  <option value="0">JNO</option>
+			<option value="1">Jomsocial profile</option>
+		</field>
+		
+		<field
+			name="faq_permalink"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_PERMALINK_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_PERMALINK_DESC"
+			default="1"
+		>
+		  <option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="faq_voting"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_VOTING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_VOTING_DESC"
+			default="1"
+		>
+		  <option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="faq_guest_voting"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_GUEST_VOTING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_GUEST_VOTING_DESC"
+			default="1"
+		>
+		  <option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="faq_image"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_DESC"
+			default="0"
+		>
+		  <option value="0">JNONE</option>
+		  <option value="1">COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_INTRO_IMAGE</option>
+		  <option value="2">COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_FULLTEXT_IMAGE</option>
+		</field>
+		
+		<field name="faq_imageSize" type="text" default="400" size="4" label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_SIZE_LABEL" description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_SIZE_DESC"/>
+		
+		<field name="faq_imageHeight" type="text" default="" size="4" label="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_HEIGHT_LABEL" description="COM_FAQBOOKPRO_CONFIG_FAQS_FAQ_IMAGE_HEIGHT_DESC"/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="search_settings"
+		label="COM_FAQBOOKPRO_CONFIG_SEARCH_SETTINGS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_SEARCH_SETTINGS_DESC"
+	>
+	  
+	  <field
+			name="faq_search"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SEARCH_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SEARCH_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="search_limit" type="text" default="50" size="4" label="COM_FAQBOOKPRO_CONFIG_SEARCH_LIMIT_LABEL" description="COM_FAQBOOKPRO_CONFIG_SEARCH_LIMIT_DESC"/>
+		
+		<field
+			name="search_ordering"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SEARCH_ORDERING_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SEARCH_ORDERING_DESC"
+			default="id"
+		>
+		    <option value="id">Id</option>
+			<option value="title">Title</option>		
+			<option value="title_desc">Title reverse</option>
+			<option value="created">Date created</option>
+			<option value="created_desc">Date created reverse</option>
+			<option value="hits">Hits</option>
+			<option value="random">Random</option>
+		</field>
+		
+		<field
+			name="search_introtext"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SEARCH_INTROTEXT_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SEARCH_INTROTEXT_DESC"
+			default="1"
+		>
+		    <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>		
+		</field>
+		
+		<field name="search_introtext_limit" type="text" default="15" size="4" label="COM_FAQBOOKPRO_CONFIG_SEARCH_INTROTEXT_LIMIT_LABEL" description="COM_FAQBOOKPRO_CONFIG_SEARCH_INTROTEXT_LIMIT_DESC"/>
+		
+		<field
+			name="search_category"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_SEARCH_CATEGORY_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_SEARCH_CATEGORY_DESC"
+			default="1"
+		>
+		    <option value="0">COM_FAQBOOKPRO_HIDE</option>
+			<option value="1">COM_FAQBOOKPRO_SHOW</option>		
+		</field>
+	
+	</fieldset>
+	
+	<fieldset
+		name="ask_new_settings"
+		label="COM_FAQBOOKPRO_CONFIG_ASK_NEW_FAQ_SETTINGS_LABEL"
+		description="COM_FAQBOOKPRO_CONFIG_ASK_NEW_FAQ_SETTINGS_DESC"
+	>
+	
+		<field
+			name="enable_ask_new_faq"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_ASK_NEW_FAQ_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ASK_NEW_FAQ_DESC"
+			default="1"
+		>
+		    <option value="0">JNO</option>
+			<option value="1">COM_FAQBOOKPRO_CONFIG_ASK_NEW_YES_FOR_MEMBERS</option>		
+			<option value="2">COM_FAQBOOKPRO_CONFIG_ASK_NEW_YES_FOR_ALL</option>
+		</field>
+		
+		<field
+			name="allow_select_category"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_ALLOW_SELECT_CATEGORY_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ALLOW_SELECT_CATEGORY_DESC"
+			default="1"
+		>
+		    <option value="0">JNO</option>
+			<option value="1">JYES</option>		
+		</field>
+				
+		<field 
+			name="ask_bulk_cat" 
+			type="category"
+			extension="com_faqbookpro"
+			multiple="false"
+			size="10"
+			default=""
+			label="COM_FAQBOOKPRO_CONFIG_ASK_BULK_CAT_LABEL" 
+			description="COM_FAQBOOKPRO_CONFIG_ASK_BULK_CAT_DESC" 
+		>
+		</field>
+		
+		<field
+			name="ask_autopublish"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_ASK_AUTOPUBLISH_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ASK_AUTOPUBLISH_DESC"
+			default="0"
+		>
+		    <option value="0">JNO</option>
+			<option value="1">JYES</option>		
+		</field>
+		
+		<field
+			name="askform_captcha"
+			type="list"
+			label="COM_FAQBOOKPRO_CONFIG_ASKFORM_CAPTCHA_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ASKFORM_CAPTCHA_DESC"
+			default="0"
+		>
+		    <option value="0">JNO</option>
+			<option value="1">COM_FAQBOOKPRO_CONFIG_ASKFORM_CAPTCHA_YES_FOR_GUESTS</option>		
+			<option value="2">COM_FAQBOOKPRO_CONFIG_ASKFORM_CAPTCHA_YES_FOR_ALL</option>
+		</field>
+		
+		<field
+			name="captcha_key"
+			type="text"
+			label="COM_FAQBOOKPRO_CONFIG_ASK_RECAPTCHA_PUBLIC_KEY_LABEL"
+			description="COM_FAQBOOKPRO_CONFIG_ASK_RECAPTCHA_PUBLIC_KEY_DESC"
+			size="50"
+			default=""
+		/>
+	
+	</fieldset>
+	
+	<fieldset
+    name="permissions"
+    label="JCONFIG_PERMISSIONS_LABEL"
+    description="JCONFIG_PERMISSIONS_DESC"
+  >
+    <field
+      name="rules"
+      type="rules"
+      label="JCONFIG_PERMISSIONS_LABEL"
+      class="inputbox"
+      validate="rules"
+      filter="rules"
+      component="com_faqbookpro"
+      section="component"
+     />
+   </fieldset>
+	
+</config>

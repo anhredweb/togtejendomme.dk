@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="template-information">
+		<field name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+
+		<field name="title"
+			type="text"
+			default=""
+			label="COM_REDITEM_TYPE_NAME"
+			required="true"
+			description="COM_REDITEM_TYPE_NAME_DESCRIPTION"
+			message="COM_REDITEM_TYPE_NAME_DESCRIPTION"
+		/>
+
+		<field name="description"
+			type="editor"
+			default=""
+			label="COM_REDITEM_TYPE_DESCRIPTION"
+			description="COM_REDITEM_TYPE_DESCRIPTION_DESCRIPTION"
+			cols="80"
+			filter="safehtml"
+			buttons="true"
+		/>
+
+		<field name="table_name"
+			type="hidden"
+			default=""
+			class="readonly"
+			readonly="true"
+		/>
+	</fieldset>
+	<fields name="params">
+		<field
+			type="spacer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORIES"
+		/>
+		<field
+			name="category_gmap_field"
+			type="radio"
+			class="btn-group"
+			label="COM_REDITEM_TYPE_CATEGORY_GMAP_FIELD"
+			default="0"
+			section="view_categorydetail">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="default_categorydetail_template"
+			type="redtemplate"
+			label="COM_REDITEM_TYPE_DEFAULT_CATEGORYDETAIL_TEMPLATE"
+			section="view_categorydetail"
+		/>
+		<field
+			name="default_categoryimage_large_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_LARGE_WIDTH"
+			default="600"
+		/>
+		<field
+			name="default_categoryimage_large_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_LARGE_HEIGHT"
+			default="600"
+		/>
+		<field
+			name="default_categoryimage_medium_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_MEDIUM_WIDTH"
+			default="300"
+		/>
+		<field
+			name="default_categoryimage_medium_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_MEDIUM_HEIGHT"
+			default="300"
+		/>
+		<field
+			name="default_categoryimage_small_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_SMALL_WIDTH"
+			default="150"
+		/>
+		<field
+			name="default_categoryimage_small_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_CATEGORYIMAGE_SMALL_HEIGHT"
+			default="150"
+		/>
+		<field
+			type="spacer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMS"
+		/>
+		<field
+			name="default_itemdetail_template"
+			type="redtemplate"
+			label="COM_REDITEM_TYPE_DEFAULT_ITEMDETAIL_TEMPLATE"
+			section="view_itemdetail"
+		/>
+		<field
+			name="default_itemimage_large_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_LARGE_WIDTH"
+			default="600"
+		/>
+		<field
+			name="default_itemimage_large_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_LARGE_HEIGHT"
+			default="600"
+		/>
+		<field
+			name="default_itemimage_medium_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_MEDIUM_WIDTH"
+			default="300"
+		/>
+		<field
+			name="default_itemimage_medium_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_MEDIUM_HEIGHT"
+			default="300"
+		/>
+		<field
+			name="default_itemimage_small_width"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_SMALL_WIDTH"
+			default="150"
+		/>
+		<field
+			name="default_itemimage_small_height"
+			type="text"
+			filter="integer"
+			label="COM_REDITEM_TYPE_CONFIGURATION_ITEMIMAGE_SMALL_HEIGHT"
+			default="150"
+		/>
+	</fields>
+</form>

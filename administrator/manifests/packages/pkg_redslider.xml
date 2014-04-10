@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>redsider package</name>
+	<packager>redslider</packager>
+	<packagename>redslider</packagename>
+	<version>1.0</version>
+	<creationDate>June 2013</creationDate>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<author>redComponent</author>
+    <authorEmail>email@redweb.dk</authorEmail>
+    <authorUrl>http://www.redcomponent.com</authorUrl>	
+	<packagerurl>www.redweb.dk</packagerurl>
+	<description></description>
+	<update></update>
+	<files folder="redslider">
+		<file type="component" id="com_redslider">com_redslider.zip</file>
+		<file type="module" id="mod_redslider" client="site">mod_redslider.zip</file>		
+		<file type="library" id="lib_fof-2.0.0">lib_fof-2.0.0.zip</file>
+	</files>
+</extension>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="field-information">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true"
+			/>
+
+		<field
+			name="name"
+			type="text"
+			default=""
+			label="COM_REDITEM_FIELD_NAME"
+			required="true"
+			class="input-normal"
+			description="COM_REDITEM_FIELD_NAME_DESCRIPTION"
+			message="COM_REDITEM_FIELD_NAME_DESCRIPTION"
+		/>
+
+		<field
+			name="fieldcode"
+			type="hidden"
+			class="input-normal"
+			readonly="true"
+			label="COM_REDITEM_FIELD_FIELDCODE"
+			description="COM_REDITEM_FIELD_FIELDCODE_DESCRIPTION"
+		/>
+
+		<field name="type"
+			type="list"
+			class="chosen"
+			label="COM_REDITEM_FIELD_FIELDTYPE"
+			description="COM_REDITEM_FIELD_FIELDTYPE_DESCRIPTION"
+			required="true"
+			onchange="javascript:showHideOptions();"
+			default="">
+			<option value="">COM_REDITEM_TOPLEVEL</option>
+			<option value="number">Number</option>
+			<option value="text">Text</option>
+			<option value="textarea">Textarea</option>
+			<option value="editor">Editor</option>
+			<option value="select">Select</option>
+			<!-- <option value="select_multiple">Multiple select</option> -->
+			<option value="radio">Radio</option>
+			<option value="checkbox">Checkbox</option>
+			<option value="image">Image</option>
+			<option value="gallery">Gallery</option>
+			<option value="date">Date</option>
+			<option value="youtube">YouTube</option>
+			<option value="googlemaps">Google Maps</option>
+		</field>
+
+		<field name="options"
+			type="textarea"
+			cols="100"
+			rows="5"
+			class="input-normal"
+			label="COM_REDITEM_FIELD_OPTIONS"
+			description="COM_REDITEM_FIELD_OPTIONS_DESCRIPTION"
+			/>
+
+		<field name="published" type="radio"
+			   label="JPUBLISHED"
+			   class="btn-group"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

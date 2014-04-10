@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_REDITEMCATEGORYFIELDS</name>
+	<creationDate>December 2013</creationDate>
+	<author>redCOMPONENT.com</author>
+	<authorEmail>email@redcomponent.com</authorEmail>
+	<authorUrl>www.redweb.dk</authorUrl>
+	<copyright>(c) Redweb.dk</copyright>
+	<license>GNU/GPL</license>
+	<version>2.0</version>
+	<description>COM_REDITEMCATEGORYFIELDS_DESCRIPTION</description>
+	<scriptfile>install.php</scriptfile>
+	<redcore version="1.0" />
+
+	<install folder="administrator/components/reditemcategoryfields">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysql" charset="utf8">sql/install/mysql/data.sql</file>
+		</sql>
+	</install>
+	<uninstall folder="administrator/components/reditemcategoryfields">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<update folder="administrator/components/reditemcategoryfields">
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<administration>
+		<menu img="components/com_reditemcategoryfields/assets/images/reditem_categories16.png">COM_REDITEMCATEGORYFIELDS</menu>
+		<files folder="administrator/components/reditemcategoryfields">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>reditemcategoryfields.php</filename>
+		</files>
+		<languages folder="administrator/components/reditemcategoryfields/language">
+			<language tag="en-GB">en-GB/en-GB.com_reditemcategoryfields.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_reditemcategoryfields.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

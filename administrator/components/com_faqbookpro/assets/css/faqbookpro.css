@@ -1,0 +1,84 @@
+/* General */
+.fbp .thumbnails {
+	display: inline-block;
+	text-align: center;
+	margin: 15px 15px 0 0;
+}
+.fbp .thumbnails a.thumbnail {
+	float: left;
+	width: 100px;
+	background: #fff;	
+	padding: 10px;
+}
+
+.quick-link {
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+}
+
+.quick-link.version {
+	border: 0;	
+}
+
+.quick-link a span {
+	padding-left: 25px;
+}
+
+.quick-link p {
+	line-height: 18px;
+	font-size: 13px;
+	padding: 15px 7px;
+	color: #888;
+	margin: 0;
+}
+
+.quick-link a {
+	line-height: 18px;
+	font-size: 13px;
+	padding: 7px;
+}
+
+.quick-link a.btn {
+	
+}
+
+.icon-newarticle {
+	background: url("../images/dashboard/icons/icon-16-newarticle.png") no-repeat scroll 0 0 transparent;
+}
+.icon-article {
+	background: url("../images/dashboard/icons/icon-16-article.png") no-repeat scroll 0 0 transparent;
+}
+.icon-newcategory {
+	background: url("../images/dashboard/icons/icon-16-newcategory.png") no-repeat scroll 0 0 transparent;
+}
+.icon-category {
+	background: url("../images/dashboard/icons/icon-16-category.png") no-repeat scroll 0 0 transparent;
+}
+.icon-featured {
+	background: url("../images/dashboard/icons/icon-16-featured.png") no-repeat scroll 0 0 transparent;
+}
+.icon-trash {
+	background: url("../images/dashboard/icons/icon-16-trash.png") no-repeat scroll 0 0 transparent;
+}
+.icon-info {
+	background: url("../images/dashboard/icons/icon-16-info.png") no-repeat scroll 0 0 transparent;
+}
+.icon-help {
+	background: url("../images/dashboard/icons/icon-16-help.png") no-repeat scroll 0 0 transparent;
+}
+.icon-maintenance {
+	background: url("../images/dashboard/icons/icon-16-maintenance.png") no-repeat scroll 0 0 transparent;
+}
+
+.pagetitle.icon-48-dashboard {
+	background: url("../images/dashboard/icon-48-dashboard.png") no-repeat scroll 0 0 transparent;
+}
+.pagetitle.icon-48-articles {
+	background: url("../images/dashboard/icon-48-article.png") no-repeat scroll 0 0 transparent;
+}
+.pagetitle.icon-48-about {
+	background: url("../images/dashboard/icon-48-about.png") no-repeat scroll 0 0 transparent;
+}
+.pagetitle.icon-48-votes {
+	background: url("../images/dashboard/icon-48-votes.png") no-repeat scroll 0 0 transparent;
+}

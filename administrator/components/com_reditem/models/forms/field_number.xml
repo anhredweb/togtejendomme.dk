@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field
+			name="number_decimal_sepatator"
+			type="text"			
+			label="COM_REDITEM_FIELD_CONFIGURATION_NUMBER_DECIMAL_SEPATATOR"
+			default="."
+		/>
+		<field
+			name="number_thousand_separator"
+			type="text"
+			label="COM_REDITEM_FIELD_CONFIGURATION_NUMBER_THOUSAND_SEPATATOR"
+			default=","
+		/>
+		<field
+			name="number_number_decimals"
+			type="text"
+			validate="integer"
+			label="COM_REDITEM_FIELD_CONFIGURATION_NUMBER_NUMBER_DECIMALS"
+			default="2"
+		/>
+	</fields>
+</form>

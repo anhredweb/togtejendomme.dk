@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="template-information">
+		<field name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+
+		<field name="name"
+			type="text"
+			default=""
+			label="COM_REDITEM_KEYWORD_NAME"
+			required="true"
+			class="input-normal"
+			description="COM_REDITEM_KEYWORD_NAME_DESCRIPTION"
+			message="COM_REDITEM_KEYWORD_NAME_DESCRIPTION"
+		/>
+
+		<field name="parent_id"
+			type="rikeywords"
+			default=""
+			label="COM_REDITEM_KEYWORDS_PARENT"
+			description="COM_REDITEM_KEYWORD_PARENT_DESCRIPTION">
+			<option value="">COM_REDITEM_TOPLEVEL</option>
+		</field>
+
+		<field name="input_id"
+			type="list"
+			default="0"
+			label="COM_REDITEM_KEYWORD_FIELDTYPE"
+			description="COM_REDITEM_KEYWORD_FIELDTYPE_DESCRIPTION">
+			<option value="0">COM_REDITEM_KEYWORD_NONE</option>
+			<option value="1">COM_REDITEM_KEYWORD_RADIO</option>
+			<option value="2">COM_REDITEM_KEYWORD_CHECKBOX</option>
+		</field>
+
+		<field name="published"
+			type="radio"
+			label="JPUBLISHED"
+			class="btn-group"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>

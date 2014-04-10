@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<annoncer xmlns="http://www.boligportal.dk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.boligportal.dk/boligportal.xsd">
+	<annonce ver="1.2">
+		<storudlejerid>11-113-22</storudlejerid>
+		<sidstrettetdato>1395929512</sidstrettetdato>
+		<bolig depositum="1102,50" forudbetaltleje="0">
+			<type>Parkeringsplads</type>
+			<husleje>367,50</husleje>
+			<kvm>12</kvm>
+			<overtagelsesdato>0</overtagelsesdato>
+			<moebleret>2</moebleret>
+			<husdyr>2</husdyr>
+			<delevenlig>2</delevenlig>
+			<adresse doer="" side="" etage="" bogstav="" >
+				<postnummer>5000</postnummer>
+				<vejnavn>Schacksgade</vejnavn>
+				<husnummer>42</husnummer>
+			</adresse>
+		</bolig>
+		<lejeperiode>3</lejeperiode>
+		<overskrift>Garage i Odense centrum</overskrift>
+		<tekst>Med god beliggenhed på Schacksgade i Odense centrum udlejes garage beliggende i ugeneret gård.
+Kontoret kan kontaktes pr. telefon for aftale om fremvisning/udlejning.</tekst>
+		<kontakt>
+			<email>keg@togtejendomme.dk</email>
+			<telefon1>70701320</telefon1>
+		</kontakt>
+		<billeder>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/596/gallery_1392796161_togt-odense-8-01.jpg</url>
+				<timestamp>1395929512</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/</url>
+				<timestamp>1395929512</timestamp>
+			</billede>
+		</billeder>
+	</annonce>
+	<annonce ver="1.2">
+		<storudlejerid>11-131-33</storudlejerid>
+		<sidstrettetdato>1396856980</sidstrettetdato>
+		<bolig depositum="12732" forudbetaltleje="4244">
+			<type>2-v?relses lejlighed</type>
+			<husleje>4244</husleje>
+			<kvm>48</kvm>
+			<overtagelsesdato>0</overtagelsesdato>
+			<moebleret>2</moebleret>
+			<husdyr>2</husdyr>
+			<delevenlig>2</delevenlig>
+			<adresse doer="" side="" etage="2." bogstav="F" >
+				<postnummer>5700</postnummer>
+				<vejnavn>Ørkildsgade</vejnavn>
+				<husnummer>37</husnummer>
+			</adresse>
+		</bolig>
+		<lejeperiode>3</lejeperiode>
+		<overskrift>Lejlighed nær havnen i Svendborg</overskrift>
+		<tekst>I nyere ejendom på Ørkildsgade - nær havnen og Føtex - udlejes lækker 2 vær. lejlighed på 48 m2 beliggende på 2. sal.
+Lejligheden indeholder køkken i åben forbindelse med stue. Flot badeværelse med brus samt godt soveværelse.
+Køkken er med køleskab, komfur, ovn og emhætte.
+Der er fællesvaskeri, elevator samt lille gårdanlæg. Fri parkering på vejen foran bygningen.
+Acconto dækker vand, varme. Dertil opkræves antennebidrag kr. 100,00 + internet (100 MB) kr. 142,00.
+Der må ikke holdes husdyr.</tekst>
+		<kontakt>
+			<email>keg@togtejendomme.dk</email>
+			<telefon1>70701320</telefon1>
+		</kontakt>
+		<billeder>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/772/8e901024b179cb5789b07d5e56cd460444351e85320eb0ed73177d8e2aef97f3.jpg</url>
+				<timestamp>1396856980</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/</url>
+				<timestamp>1396856980</timestamp>
+			</billede>
+		</billeder>
+	</annonce>
+	<annonce ver="1.2">
+		<storudlejerid>18-135-86</storudlejerid>
+		<sidstrettetdato>1395748051</sidstrettetdato>
+		<bolig depositum="20091" forudbetaltleje="6697">
+			<type>3-v?relses lejlighed</type>
+			<husleje>6697</husleje>
+			<kvm>74</kvm>
+			<overtagelsesdato>0</overtagelsesdato>
+			<moebleret>2</moebleret>
+			<husdyr>2</husdyr>
+			<delevenlig>1</delevenlig>
+			<adresse doer="" side="mf" etage="1." bogstav="A" >
+				<postnummer>5000</postnummer>
+				<vejnavn>Skt. Hans Gade</vejnavn>
+				<husnummer>85</husnummer>
+			</adresse>
+		</bolig>
+		<lejeperiode>3</lejeperiode>
+		<overskrift>Delevenlig lejlighed I Odense centrum</overskrift>
+		<tekst>På Skt. Hans Gade i Odense C udlejes lækker moderniseret 3 vær. lejlighed på 74 m2 i nyere renoveret ejendom tilbagetrukket fra vejen og med grønne områder. Lejligheden har stort dejligt køkken i åben forbindelse med lys stue. Stort badeværelse med brus og skabsarrangement. Lyst soveværelsemed skabe samt kontor/børneværelse.
+Til lejen opkræves vand kr. pr. mdr. 150,00 + varme kr. pr. mdr. 300,00.
+Der er gode parkeringsforhold og fællesvaskeri.
+Det er ikke tilladt at holde husdyr.</tekst>
+		<kontakt>
+			<email>keg@togtejendomme.dk</email>
+			<telefon1>70701320</telefon1>
+		</kontakt>
+		<billeder>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1024/c06c3c9b36fa391ff4faafa6311a15d880355fca67906035473ab82cd59073b7.jpg</url>
+				<timestamp>1395748051</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/</url>
+				<timestamp>1395748051</timestamp>
+			</billede>
+		</billeder>
+	</annonce>
+	<annonce ver="1.2">
+		<storudlejerid>23-139-19</storudlejerid>
+		<sidstrettetdato>1394103977</sidstrettetdato>
+		<bolig depositum="19500" forudbetaltleje="6500">
+			<type>4-v?relses lejlighed</type>
+			<husleje>6500</husleje>
+			<kvm>105</kvm>
+			<overtagelsesdato>0</overtagelsesdato>
+			<moebleret>2</moebleret>
+			<husdyr>2</husdyr>
+			<delevenlig>1</delevenlig>
+			<adresse doer="" side="" etage="" bogstav="K" >
+				<postnummer>5883</postnummer>
+				<vejnavn>Østervangen</vejnavn>
+				<husnummer>45</husnummer>
+			</adresse>
+		</bolig>
+		<lejeperiode>3</lejeperiode>
+		<overskrift>Charmerende rækkehus i Oure</overskrift>
+		<tekst>Lækkert 4 vær. rækkehus på 105 m2 beliggende på Østervangen i Oure i roligt og lukket vænge.
+Huset har en stor lys stue i åben forbindelse med stort og nyere køkken, flot flisebadeværelse med brus, 3 gode lyse værelser med skabe. Der er egen have med lille terrasse samt p-plads og redskabsskur.
+Huset ligger i naturskønt område. Forbruget afregnes direkte til forsyningsselskabet.
+Det er ikke tilladt at holde husdyr.</tekst>
+		<kontakt>
+			<email>keg@togtejendomme.dk</email>
+			<telefon1>70701320</telefon1>
+		</kontakt>
+		<billeder>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1396.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1399.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1401.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1404.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1404.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1133/gallery_1392294535_img-1406.jpg</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/</url>
+				<timestamp>1394103977</timestamp>
+			</billede>
+		</billeder>
+	</annonce>
+	<annonce ver="1.2">
+		<storudlejerid>16-133</storudlejerid>
+		<sidstrettetdato>1395929443</sidstrettetdato>
+		<bolig depositum="" forudbetaltleje="">
+			<type>Parkeringsplads</type>
+			<husleje>650</husleje>
+			<kvm></kvm>
+			<overtagelsesdato>0</overtagelsesdato>
+			<moebleret>2</moebleret>
+			<husdyr>2</husdyr>
+			<delevenlig>2</delevenlig>
+			<adresse doer="" side="" etage="" bogstav="" >
+				<postnummer>5000</postnummer>
+				<vejnavn>Klostervej </vejnavn>
+				<husnummer>3</husnummer>
+			</adresse>
+		</bolig>
+		<lejeperiode>3</lejeperiode>
+		<overskrift>Parkering i hjertet af Odense City</overskrift>
+		<tekst>Parkeringsplads udlejes i hjertet af Odense centrum i sikkerhedsparkeringshus. 
+Lejen betales kvartalsvis.</tekst>
+		<kontakt>
+			<email>keg@togtejendomme.dk</email>
+			<telefon1>70701320</telefon1>
+		</kontakt>
+		<billeder>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/1135/gallery_1392363131_togt-odense2-2-03.jpg</url>
+				<timestamp>1395929443</timestamp>
+			</billede>
+			<billede>
+				<url>http://www.togtejendomme.dk/components/com_reditem/assets/images/customfield/</url>
+				<timestamp>1395929443</timestamp>
+			</billede>
+		</billeder>
+	</annonce>
+</annoncer>
