@@ -20,8 +20,11 @@ $userId = $user->id;
 
 if ($saveOrder)
 {
-	JHTML::_('rsortablelist.sortable', 'table-items', 'adminForm', strtolower($listDirn), 'index.php?option=com_reditem&task=items.saveOrderAjax&tmpl=component', true, true);
+	$tableSortLink = 'index.php?option=com_reditem&task=items.saveOrderAjax&tmpl=component';
+	JHTML::_('rsortablelist.sortable', 'table-items', 'adminForm', strtolower($listDirn), $tableSortLink, true, true);
 }
+
+$typeId = JFactory::getApplication()->getUserState('com_reditem.global.tid', '0');
 ?>
 <script type="text/javascript">
 	Joomla.submitbutton = function (pressbutton)
@@ -50,7 +53,7 @@ if ($saveOrder)
 		<div class="span6">
 			<?php echo RLayoutHelper::render('search', array('view' => $this)) ?>
 		</div>
-		<div class="span2">
+		<div class="span3">
 			<?php echo $this->filterForm->getInput('filter_types'); ?>
 		</div>
 		<div class="span2">
@@ -74,42 +77,51 @@ if ($saveOrder)
 				</th>
 				<th width="30px" nowrap="nowrap">
 				</th>
+				<?php if ($search == ''): ?>
+				<th width="20">
+					<?php echo JHTML::_('rgrid.sort', '', 'i.ordering', $listDirn, $listOrder); ?>
+				</th>
+				<?php endif; ?>
 				<th class="title" width="auto">
 					<?php echo JHTML::_('rgrid.sort', 'COM_REDITEM_ITEM_NAME', 'i.title', $listDirn, $listOrder); ?>
 				</th>
-				<th width="80">
+				<th width="50">
 					<?php echo JHTML::_('rgrid.sort', 'COM_REDITEM_ITEM_TYPE', 'type_name', $listDirn, $listOrder); ?>
 				</th>
-				<th width="15%">
+				<?php if (($this->displayableFields) && (count($this->displayableFields) > 0)) : ?>
+					<?php foreach ($this->displayableFields as $displayField) : ?>
+						<th>
+						<?php echo $displayField->name; ?>
+						</th>
+					<?php endforeach; ?>
+				<?php endif; ?>
+				<th width="150">
 					<?php echo JText::_('COM_REDITEM_ITEM_CATEGORIES'); ?>
 				</th>
-				<th width="15%">
+				<th width="150">
 					<?php echo JHTML::_('rgrid.sort', 'COM_REDITEM_ITEM_TEMPLATE', 'template_name', $listDirn, $listOrder); ?>
 				</th>
-				<th width="80">
+				<th width="30">
 					<?php echo JHtml::_('rgrid.sort', 'JGRID_HEADING_ACCESS', 'access_level', $listDirn, $listOrder); ?>
 				</th>
-				<?php if ($search == ''): ?>
-				<th width="80">
-					<?php echo JHTML::_('rgrid.sort', 'COM_REDITEM_ORDERING', 'i.ordering', $listDirn, $listOrder); ?>
-				</th>
-				<?php endif; ?>
-				<th width="50" nowrap="nowrap">
+				<th width="20" nowrap="nowrap">
 					<?php echo JHTML::_('rgrid.sort', 'COM_REDITEM_ID', 'i.id', $listDirn, $listOrder); ?>
 				</th>
 			</tr>
 		</thead>
 		<tfoot>
 		<tr>
-			<?php if ($search == ''): ?>
-			<td colspan="11">
+			<?php
+			// Default number of columns
+			$columnNumber = 10;
+			// If don't have search term, add 1 column (ordering column)
+			if ($search == '') $columnNumber++;
+			// If have displayable field, add them to columns 
+			if (($this->displayableFields) && (count($this->displayableFields) > 0)) $columnNumber += count($this->displayableFields);
+			?>
+			<td colspan="<?php echo $columnNumber; ?>">
 				<?php echo $this->pagination->getListFooter(); ?>
 			</td>
-			<?php else : ?>
-			<td colspan="10">
-				<?php echo $this->pagination->getListFooter(); ?>
-			</td>
-			<?php endif; ?>
 		</tr>
 		</tfoot>
 		<tbody>
@@ -141,6 +153,15 @@ if ($saveOrder)
 							?>
 						<?php endif; ?>
 					</td>
+					<?php if ($search == ''): ?>
+					<td class="order nowrap center">
+						<span class="sortable-handler hasTooltip <?php echo ($saveOrder) ? '' : 'inactive' ;?>"
+							title="<?php echo ($saveOrder) ? '' :JText::_('COM_REDITEM_ORDERING_DISABLED');?>">
+							<i class="icon-move"></i>
+						</span>
+						<input type="text" style="display:none" name="order[]" value="<?php echo $orderkey + 1;?>" class="text-area-order" />
+					</td>
+					<?php endif; ?>
 					<td>
 						<?php if ($item->checked_out) : ?>
 							<?php echo $item->title; ?>
@@ -151,6 +172,19 @@ if ($saveOrder)
 					<td>
 						<?php echo $item->type_name; ?>
 					</td>
+					<!-- Add displayable fields data -->
+					<?php if (($this->displayableFields) && (count($this->displayableFields) > 0)) : ?>
+						<?php foreach ($this->displayableFields as $displayField) : ?>
+							<td>
+							<?php $cfValue = $item->customfield_values[$displayField->fieldcode]; ?>
+							<?php if ($displayField->type == "checkbox") : ?>
+								<?php $cfValue = implode(', ', json_decode($item->customfield_values[$displayField->fieldcode])); ?>
+							<?php endif; ?>
+							<?php echo strip_tags($cfValue); ?>
+							</td>
+						<?php endforeach; ?>
+					<?php endif; ?>
+					<!-- End add displayable fields data -->
 					<td>
 						<?php if (isset($item->categories)) : ?>
 							<?php $categories = array(); ?>
@@ -166,12 +200,6 @@ if ($saveOrder)
 					<td class="center">
 						<?php echo $this->escape($item->access_level); ?>
 					</td>
-					<?php if ($search == ''): ?>
-					<td class="order nowrap center">
-						<span class="sortable-handler hasTooltip <?php echo ($saveOrder) ? '' : 'inactive' ;?>" title="<?php echo ($saveOrder) ? '' :JText::_('COM_REDITEM_ORDERING_DISABLED');?>"><i class="icon-move"></i></span>
-						<input type="text" style="display:none" name="order[]" value="<?php echo $orderkey + 1;?>" class="text-area-order" />
-					</td>
-					<?php endif; ?>
 					<td align="center">
 						<?php echo $item->id; ?>
 					</td>
@@ -180,6 +208,7 @@ if ($saveOrder)
 		<?php endif; ?>
 		</tbody>
 	</table>
+
 	<input type="hidden" name="task" value=""/>
 	<input type="hidden" name="boxchecked" value="0"/>
 	<input type="hidden" name="filter_order" value="<?php echo $listOrder; ?>"/>
