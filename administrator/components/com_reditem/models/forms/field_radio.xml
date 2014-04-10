@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field
+			name="searchable_in_backend"
+			type="radio"
+			label="COM_REDITEM_FIELD_CONFIGURATION_RADIO_SEARCHABLE_IN_BACKEND"
+			description="COM_REDITEM_FIELD_CONFIGURATION_RADIO_SEARCHABLE_IN_BACKEND_DESC"
+			class="btn-group"
+			default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fields>
+</form>

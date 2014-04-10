@@ -6,8 +6,8 @@ class JConfig {
 	public $editor = 'jce';
 	public $list_limit = '20';
 	public $access = '1';
-	public $debug = '0';
-	public $debug_lang = '0';
+	public $debug = '1';
+	public $debug_lang = '1';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
@@ -17,7 +17,7 @@ class JConfig {
 	public $live_site = '';
 	public $secret = 'IjaKDOoTFYZYQ2TD8VGd';
 	public $gzip = '0';
-	public $error_reporting = 'default';
+	public $error_reporting = 'development';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '';
 	public $ftp_port = '21';
@@ -44,7 +44,7 @@ class JConfig {
 	public $MetaKeys = 'ejendomsadministration, boligejendomme, erhvervsejendomme, udlejningsejendomme';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
-	public $sef = '1';
+	public $sef = '0';
 	public $sef_rewrite = '1';
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<field
+			name="dateFormat"
+			type="text"
+			class="input-xlarge"		
+			label="COM_REDITEM_FIELD_CONFIGURATION_DATE_FORMAT"
+			description="COM_REDITEM_FIELD_CONFIGURATION_DATE_FORMAT_DESCRIPTION"
+			default="Y - m - d" />
+	</fields>
+</form>

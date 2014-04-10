@@ -47,7 +47,7 @@ class ReditemViewField extends ReditemView
 
 		if ($fieldType)
 		{
-			$this->form->loadFile('field_' . $fieldType);
+			$this->form->loadFile('field_' . $fieldType, false);
 			$this->item->type = $fieldType;
 
 			if (isset($editData['params']) && is_array($editData['params']))
